@@ -1,0 +1,102 @@
+@import "../colors";
+@import "../shapes";
+
+.hero-row {
+  // position: fixed;
+  width: 100%;
+
+  p {
+    font-size: 18px;
+    color: $secondary-text-light;
+    $link: $primary;
+    line-height: 34px;
+
+    b {
+      font-weight: 900;
+      color: $dark;
+    }
+  }
+}
+
+.hero-text {
+  min-width: 16rem;
+
+  h1 {
+    font-size: 58px;
+    margin-top: 0;
+  }
+}
+
+.hero-technologies {
+  margin-top: 6rem;
+
+  h3 {
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+    color: $secondary-text-light;
+  }
+
+  ul {
+    padding: 0;
+
+    li {
+      font-weight: 500;
+      border-radius: 8px;
+      display: inline;
+      padding: 5px;
+      background: white;
+      color: $primary;
+      border-color: $primary;
+      border-width: 2px;
+      border-style: solid;
+      margin-right: 16px;
+      transition: 0.5s;
+    }
+
+    li:hover {
+      color: white;
+      background: $primary;
+      border-color: $primary;
+    }
+  }
+
+}
+
+.avatar-wrapper {
+  float: right;
+  width: 14rem;
+  //display: block;
+  //position: absolute;
+
+  div.avatar {
+    // border-radius: 72% 28% 64% 36%/75% 63% 37% 25%;
+    border-radius: 100%;
+    // @extend .morph;
+    // border: 1px solid $primary;
+    display: inline-block;
+    overflow: hidden;
+
+    // opacity($primary, 50%);
+    //span.avatar-line {
+    //  width: 100%;
+    //  height: 100%;
+    //  position: absolute;
+    //  top: -1.25rem;
+    //  right: -1.25rem;
+    //  bottom: -1.25rem;
+    //  left: -1.25rem;
+    //  border: 1px solid $primary;
+    //  border-radius: 72% 28% 64% 36%/75% 63% 37% 25%;
+    //  -webkit-animation: morph 5s ease-in-out infinite;
+    //  animation: morph 5s ease-in-out infinite;
+    //}
+
+    img {
+      object-fit: cover;
+      object-position: top;
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

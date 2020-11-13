@@ -1,0 +1,29 @@
+
+body {
+  // @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  margin: 0;
+}
+
+html, body, div {
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 10px 10rem;
+}
+
+.container {
+  width: unset;
+  padding: 6rem 10rem;
+}
+
+
+.section {
+  h2 {
+    margin-bottom: 6rem;
+  }
+}
+
+.footer {
+  padding: 2rem 10rem;
+}

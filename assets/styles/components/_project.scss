@@ -1,0 +1,78 @@
+@import "../shapes";
+@import "../colors";
+
+.project {
+  //position: relative;
+}
+
+.project-image {
+  //position: absolute;
+  // width: 50%;
+  padding: 2rem;
+  border-radius: $box-radius;
+  background: $grey-2;
+
+  img {
+    width: 100%;
+  }
+}
+
+.project-info {
+  max-width: 25rem;
+  float: right;
+
+  h3 {
+    color: $dark;
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+
+  .project-links {
+    margin-bottom: 1rem;
+  }
+
+  .project-description {
+    color: white;
+    background: $grey-1;
+    border-radius: $box-radius;
+
+    padding: 1.8rem;
+
+    p {
+      margin-top: 0;
+      font-size: 16px;
+    }
+
+    .project-stack {
+      h4 {
+        margin-bottom: 6px;
+        color: $secondary-text-dark;
+      }
+
+      p {
+        color: $secondary-text-dark;
+        margin-bottom: 0;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+.project-right {
+  .project-info {
+    float: left;
+
+    h3 {
+      text-align: left;
+    }
+  }
+}
+
+.project-left {
+  .project-info {
+    h3, .project-links {
+      text-align: right;
+    }
+  }
+}

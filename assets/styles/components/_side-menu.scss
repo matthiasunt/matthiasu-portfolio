@@ -1,0 +1,25 @@
+.side-menu {
+  position: fixed;
+  height: 100%;
+  background: white;
+  color: $grey-1;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  // width: 30%;
+  width: 0;
+  overflow-x: hidden;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+  ul {
+    margin-top: 3rem;
+    list-style-type: none;
+    text-align: center;
+
+    li {
+      font-size: 1.3rem;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+  }
+}
