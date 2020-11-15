@@ -3,16 +3,15 @@
 
 $secondary-animations-delay: 0s;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .hamburger {
   position: absolute;
   right: 10px;
   top: 10px;
   z-index: 2;
-}
-
-.hero-technologies > ul {
-  @extend .flicker-in;
-  animation-delay: 0.2s;
 }
 
 
@@ -29,35 +28,10 @@ $secondary-animations-delay: 0s;
   }
 }
 
-
-.about-section {
-  .about-text-col {
-    padding-right: 2rem;
-
-    p {
-      margin-top: 0;
-      line-height: 22px;
-      color: $secondary-text-light;
-    }
-  }
-
-  .about-image-col {
-    padding-left: 2rem;
-
-    .about-image {
-      img {
-        border-radius: $box-radius;
-        width: 100%;
-      }
-    }
-  }
-}
-
-
-.projects-section {
-  .row {
-    // text-align: right;
-  }
+// Animations
+.hero-technologies > ul {
+  @extend .flicker-in;
+  animation-delay: 0.2s;
 }
 
 

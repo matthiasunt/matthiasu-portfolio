@@ -1,0 +1,24 @@
+@import "../colors";
+
+.about-section {
+  .about-text-col {
+    padding-right: 2rem;
+
+    p {
+      margin-top: 0;
+      line-height: 22px;
+      color: $secondary-text-light;
+    }
+  }
+
+  .about-image-col {
+    padding-left: 2rem;
+
+    .about-image {
+      img {
+        border-radius: $box-radius;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -280,6 +280,22 @@ button {
     padding: 1rem;
   }
 }
+.about-section .about-text-col {
+  padding-right: 2rem;
+}
+.about-section .about-text-col p {
+  margin-top: 0;
+  line-height: 22px;
+  color: #3A3A3C;
+}
+.about-section .about-image-col {
+  padding-left: 2rem;
+}
+.about-section .about-image-col .about-image img {
+  border-radius: 20px;
+  width: 100%;
+}
+
 .contact-section {
   text-align: center;
 }
@@ -656,15 +672,15 @@ body {
     padding: 2rem 14rem;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .hamburger {
   position: absolute;
   right: 10px;
   top: 10px;
   z-index: 2;
-}
-
-.hero-technologies > ul {
-  animation-delay: 0.2s;
 }
 
 .cucuit .project-image {
@@ -675,20 +691,8 @@ body {
   background: #add65c;
 }
 
-.about-section .about-text-col {
-  padding-right: 2rem;
-}
-.about-section .about-text-col p {
-  margin-top: 0;
-  line-height: 22px;
-  color: #3A3A3C;
-}
-.about-section .about-image-col {
-  padding-left: 2rem;
-}
-.about-section .about-image-col .about-image img {
-  border-radius: 20px;
-  width: 100%;
+.hero-technologies > ul {
+  animation-delay: 0.2s;
 }
 
 /*# sourceMappingURL=styles.css.map */
