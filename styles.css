@@ -20,13 +20,14 @@ h1, h2, h3 {
 h1 {
   display: inline-block;
   font-size: 45px;
-  color: #0000cc;
+  color: #0000B8;
   font-weight: 900;
 }
 
 p.section-text {
   font-size: 16px;
   line-height: 30px;
+  font-weight: 300;
   color: #3A3A3C;
 }
 
@@ -35,11 +36,11 @@ a.cool-link {
   position: relative;
   overflow: hidden;
   text-decoration: none;
-  color: #0000cc;
+  color: #0000B8;
 }
 a.cool-link::after {
   content: "";
-  background: rgba(0, 0, 204, 0.25);
+  background: rgba(0, 0, 184, 0.25);
   position: absolute;
   left: 5px;
   bottom: -4px;
@@ -55,9 +56,18 @@ a.cool-link:hover:after {
   height: 100%;
 }
 
+a.cool-link:hover {
+  color: #0000B8;
+}
+
 a, a:visited {
-  color: #0000cc;
+  color: #0000B8;
   text-decoration: none;
+}
+
+a:hover {
+  color: #636366;
+  transition: 0.3s;
 }
 
 h2.section-title {
@@ -69,25 +79,81 @@ body {
   margin: 0;
 }
 
+@media (max-width: 575.98px) {
+  .section, .hero-section, .navbar, .footer {
+    padding: 2rem 2rem;
+  }
+
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .navbar {
+    padding: 2rem 1rem;
+  }
+}
+@media (min-width: 576px) {
+  .section, .hero-section {
+    padding: 4rem 2rem;
+  }
+
+  .footer {
+    padding: 2rem 2rem;
+  }
+
+  .navbar {
+    padding: 2rem 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .section, .hero-section {
+    padding: 4rem 8rem;
+  }
+
+  .footer {
+    padding: 2rem 8rem;
+  }
+
+  .navbar {
+    padding: 2rem 8rem;
+  }
+}
+@media (min-width: 992px) {
+  .section, .hero-section {
+    padding: 6rem 10rem;
+  }
+
+  .footer {
+    padding: 2rem 10rem;
+  }
+
+  .navbar {
+    padding: 2rem 10rem;
+  }
+}
+@media (min-width: 1200px) {
+  .section, .hero-section {
+    padding: 6rem 12rem;
+  }
+
+  .footer {
+    padding: 2rem 12rem;
+  }
+
+  .navbar {
+    padding: 2rem 12rem;
+  }
+}
 html, body, div {
   box-sizing: border-box;
 }
 
-.navbar {
-  padding: 10px 10rem;
-}
-
 .container {
   width: unset;
-  padding: 6rem 10rem;
 }
 
-.section h2 {
-  margin-bottom: 6rem;
-}
-
-.footer {
-  padding: 2rem 10rem;
+.alternate-background {
+  background: #ececec;
 }
 
 .navbar {
@@ -100,7 +166,7 @@ html, body, div {
   box-shadow: 0 2px 4px -1px #e0e0e1;
 }
 .navbar .navbar-logo a {
-  color: #0000cc;
+  color: #0000B8;
 }
 .navbar .navbar-links {
   white-space: nowrap;
@@ -124,11 +190,15 @@ html, body, div {
   color: #000;
 }
 
+.hero-section {
+  min-height: 95vh;
+}
+
 .hero-text {
   min-width: 16rem;
 }
 .hero-text h1 {
-  font-size: 58px;
+  font-size: 52px;
   margin-top: 0;
 }
 
@@ -149,8 +219,8 @@ html, body, div {
   display: inline;
   padding: 5px;
   background: white;
-  color: #0000cc;
-  border-color: #0000cc;
+  color: #0000B8;
+  border-color: #0000B8;
   border-width: 2px;
   border-style: solid;
   margin-right: 16px;
@@ -158,8 +228,8 @@ html, body, div {
 }
 .hero-technologies ul li:hover {
   color: white;
-  background: #0000cc;
-  border-color: #0000cc;
+  background: #0000B8;
+  border-color: #0000B8;
 }
 
 .avatar-wrapper {
@@ -504,7 +574,7 @@ button {
 .social-links {
   position: fixed;
   right: 2rem;
-  bottom: 2rem;
+  bottom: 4rem;
 }
 .social-links i {
   font-size: 22px;
@@ -513,10 +583,6 @@ button {
   clear: right;
 }
 
-.hero-section {
-  margin-top: 6rem;
-  min-height: 85vh;
-}
 .project {
   margin-bottom: 4rem;
 }
@@ -524,13 +590,15 @@ button {
 .cucuit .project-image {
   background: #f49c87;
 }
+.cucuit a:hover {
+  color: #ec4e29;
+}
 
 .shuttle-finder .project-image {
   background: #add65c;
 }
-
-.section {
-  margin-top: 6rem;
+.shuttle-finder a:hover {
+  color: #7aa329;
 }
 
 .about-section .about-text-col {
@@ -558,12 +626,12 @@ button {
 }
 
 .footer {
-  background: #E8E8E8;
-  color: #636366;
+  background: #ececec;
+  color: #707070;
 }
 .footer i {
-  color: #636366;
-  font-size: 40px;
+  color: #707070;
+  font-size: 30px;
 }
 .footer p {
   font-weight: 300;

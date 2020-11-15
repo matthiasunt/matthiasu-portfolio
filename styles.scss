@@ -14,7 +14,7 @@ $secondary-animations-delay: 0s;
 .social-links {
   position: fixed;
   right: 2rem;
-  bottom: 2rem;
+  bottom: 4rem;
 
   i {
     font-size: 22px;
@@ -22,17 +22,10 @@ $secondary-animations-delay: 0s;
     float: right;
     clear: right;
   }
-}
 
-.hero-section {
-  margin-top: 6rem;
-  min-height: 85vh;
+  //-webkit-mask-image: -webkit-gradient(linear, left top,
+  //        left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 
-  .name {
-    h1 {
-      // @extend .text-shadow-drop-center;
-    }
-  }
 }
 
 .project {
@@ -43,17 +36,23 @@ $secondary-animations-delay: 0s;
   .project-image {
     background: lighten(#F07558, 10%);
   }
+
+
+  a:hover {
+    color: darken(#F07558, 10%);
+  }
 }
 
 .shuttle-finder {
   .project-image {
     background: lighten(#99CC33, 10%);
   }
+
+  a:hover {
+    color: darken(#99CC33, 10%);
+  }
 }
 
-.section {
-  margin-top: 6rem;
-}
 
 .about-section {
   .about-text-col {
@@ -100,7 +99,7 @@ $secondary-animations-delay: 0s;
 
   i {
     color: $tertiary-text-light;
-    font-size: 40px;
+    font-size: 30px;
   }
 
   p {

@@ -1,11 +1,20 @@
 console.log('Hey Developer 😎');
 
-let prevScrollpos = window.pageYOffset;
+let prevScrollPosition = window.pageYOffset;
 window.onscroll = () => {
-    const currentScrollPos = window.pageYOffset;
-    const navbar = document.getElementById("navbar");
-    prevScrollpos > currentScrollPos ? navbar.style.top = "0" : navbar.style.top = `-${navbar.offsetHeight}px`;
-    prevScrollpos = currentScrollPos;
+    const currentScrollPosition = window.pageYOffset;
+    // const navbar = document.getElementById("navbar");
+    // prevScrollPosition > currentScrollPosition ? navbar.style.top = "0" : navbar.style.top = `-${navbar.offsetHeight}px`;
+    prevScrollPosition = currentScrollPosition;
+    const body = document.body,
+        html = document.documentElement;
+
+    // console.log(window.outerHeight, window.pageYOffset)
+    // const height = Math.max(body.scrollHeight, body.offsetHeight,
+    //     html.clientHeight, html.scrollHeight, html.offsetHeight);
+    // const scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
+    // console.log(scrollPos);
+    // console.log(window.pageYOffset, document.documentElement.scrollHeight);
 }
 
 

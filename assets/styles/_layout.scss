@@ -1,7 +1,82 @@
+@import "colors.scss";
+
 
 body {
   // @include fluid-type($min_width, $max_width, $min_font, $max_font);
   margin: 0;
+}
+
+
+@media (max-width: 575.98px) {
+  .section, .hero-section, .navbar, .footer {
+    padding: 2rem 2rem;
+  }
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .navbar {
+    padding: 2rem 1rem;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .section, .hero-section {
+    padding: 4rem 2rem;
+  }
+
+  .footer {
+    padding: 2rem 2rem;
+  }
+
+  .navbar {
+    padding: 2rem 2rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .section, .hero-section {
+    padding: 4rem 8rem;
+  }
+
+  .footer {
+    padding: 2rem 8rem;
+  }
+
+  .navbar {
+    padding: 2rem 8rem;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .section, .hero-section {
+    padding: 6rem 10rem;
+  }
+
+  .footer {
+    padding: 2rem 10rem;
+  }
+
+  .navbar {
+    padding: 2rem 10rem;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .section, .hero-section {
+    padding: 6rem 12rem;
+  }
+  .footer {
+    padding: 2rem 12rem;
+  }
+
+  .navbar {
+    padding: 2rem 12rem;
+  }
 }
 
 html, body, div {
@@ -9,21 +84,27 @@ html, body, div {
 }
 
 .navbar {
-  padding: 10px 10rem;
+  //padding: 10px $padding-x;
 }
 
 .container {
   width: unset;
-  padding: 6rem 10rem;
 }
 
+.section, .hero-section {
+  //padding: 5rem $padding-x;
+}
 
 .section {
   h2 {
-    margin-bottom: 6rem;
+    // margin-bottom: 6rem;
   }
 }
 
+.alternate-background {
+  background: $grey-3;
+}
+
 .footer {
-  padding: 2rem 10rem;
+  //padding: 2rem $padding-x;
 }
