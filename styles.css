@@ -24,6 +24,10 @@ h1 {
   font-weight: 900;
 }
 
+.section-title {
+  margin-bottom: 4rem;
+}
+
 p.section-text {
   font-size: 16px;
   line-height: 30px;
@@ -75,87 +79,6 @@ h2.section-title {
   text-align: center;
 }
 
-body {
-  margin: 0;
-}
-
-@media (max-width: 575.98px) {
-  .section, .hero-section, .navbar, .footer {
-    padding: 2rem 2rem;
-  }
-
-  .footer {
-    padding: 2rem 1rem;
-  }
-
-  .navbar {
-    padding: 2rem 1rem;
-  }
-}
-@media (min-width: 576px) {
-  .section, .hero-section {
-    padding: 4rem 2rem;
-  }
-
-  .footer {
-    padding: 2rem 2rem;
-  }
-
-  .navbar {
-    padding: 2rem 2rem;
-  }
-}
-@media (min-width: 768px) {
-  .section, .hero-section {
-    padding: 4rem 8rem;
-  }
-
-  .footer {
-    padding: 2rem 8rem;
-  }
-
-  .navbar {
-    padding: 2rem 8rem;
-  }
-}
-@media (min-width: 992px) {
-  .section, .hero-section {
-    padding: 6rem 10rem;
-  }
-
-  .footer {
-    padding: 2rem 10rem;
-  }
-
-  .navbar {
-    padding: 2rem 10rem;
-  }
-}
-@media (min-width: 1200px) {
-  .section, .hero-section {
-    padding: 6rem 12rem;
-  }
-
-  .footer {
-    padding: 2rem 12rem;
-  }
-
-  .navbar {
-    padding: 2rem 12rem;
-  }
-}
-html, body, div {
-  box-sizing: border-box;
-}
-
-.container {
-  width: unset;
-}
-
-.alternate-background {
-  background: #ececec;
-}
-
 .navbar {
   transition: top 0.3s;
   width: 100%;
@@ -190,12 +113,9 @@ html, body, div {
   color: #000;
 }
 
-.hero-section {
-  min-height: 95vh;
-}
-
 .hero-text {
   min-width: 16rem;
+  padding-right: 2rem;
 }
 .hero-text h1 {
   font-size: 52px;
@@ -233,20 +153,32 @@ html, body, div {
 }
 
 .avatar-wrapper {
-  float: right;
   width: 14rem;
+  margin-left: 3rem;
 }
-.avatar-wrapper div.avatar {
+.avatar-wrapper .avatar {
   border-radius: 100%;
   display: inline-block;
   overflow: hidden;
 }
-.avatar-wrapper div.avatar img {
+.avatar-wrapper .avatar img {
   object-fit: cover;
   object-position: top;
   display: block;
   height: 100%;
   width: 100%;
+}
+
+.social-links {
+  position: fixed;
+  right: 2rem;
+  bottom: 4rem;
+}
+.social-links i {
+  font-size: 22px;
+  margin: 6px;
+  float: right;
+  clear: right;
 }
 
 button {
@@ -288,7 +220,6 @@ button {
 
 .project-info {
   max-width: 25rem;
-  float: right;
 }
 .project-info h3 {
   color: #000;
@@ -298,6 +229,9 @@ button {
 }
 .project-info .project-links {
   margin-bottom: 1rem;
+}
+.project-info .project-links a {
+  margin-right: 5px;
 }
 .project-info .project-description {
   color: white;
@@ -311,7 +245,7 @@ button {
 }
 .project-info .project-description .project-stack h4 {
   margin-bottom: 6px;
-  color: #c7c7cc;
+  color: #fff;
 }
 .project-info .project-description .project-stack p {
   color: #c7c7cc;
@@ -319,18 +253,56 @@ button {
   line-height: 24px;
 }
 
-.project-right .project-info {
-  float: left;
+@media (max-width: 991.98px) {
+  .project-info {
+    margin-bottom: 1rem;
+    max-width: unset;
+    width: 100%;
+  }
 }
-.project-right .project-info h3 {
-  text-align: left;
+@media (min-width: 992px) {
+  .project-right .project-info {
+    float: left;
+  }
+  .project-right .project-info h3 {
+    text-align: left;
+  }
+
+  .project-left .project-info {
+    float: right;
+  }
+  .project-left .project-info h3, .project-left .project-info .project-links {
+    text-align: right;
+  }
+}
+@media (max-width: 1199.98px) {
+  .project-image, .project-description {
+    padding: 1rem;
+  }
+}
+.contact-section {
+  text-align: center;
+}
+.contact-section .mail-link {
+  font-size: 30px;
+  font-weight: 600;
 }
 
-.project-left .project-info h3, .project-left .project-info .project-links {
-  text-align: right;
+.footer {
+  background: #636366;
+  color: #c7c7cc;
+  margin-top: 4rem;
+}
+.footer i {
+  color: #c7c7cc;
+  font-size: 30px;
+}
+.footer p {
+  font-weight: 300;
+  margin-bottom: 0;
 }
 
-.flicker-in {
+.flicker-in, .hero-technologies > ul {
   -webkit-animation: flicker-in 1s linear both;
   animation: flicker-in 1s linear both;
 }
@@ -564,6 +536,126 @@ button {
     text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
   }
 }
+html, body, div {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: unset;
+}
+
+.alternate-background {
+  background: #ececec;
+}
+
+.col-md-6 {
+  width: 100%;
+}
+
+.project {
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 575.98px) {
+  .hero-technologies {
+    margin-top: 2rem;
+  }
+  .hero-technologies ul {
+    line-height: 40px;
+  }
+  .hero-technologies ul li {
+    margin-right: 3px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .social-links {
+    right: 0.4rem;
+  }
+
+  .section, .hero-section, .navbar, .footer {
+    padding: 2rem 2rem;
+  }
+
+  .section-text {
+    text-align: left;
+  }
+
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .navbar {
+    padding: 2rem 1rem;
+  }
+}
+@media (min-width: 576px) {
+  .section, .hero-section {
+    padding: 3rem 6rem;
+  }
+
+  .footer {
+    padding: 2rem 6rem;
+  }
+
+  .navbar {
+    padding: 2rem 6rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-name {
+    text-align: center;
+  }
+
+  .avatar-wrapper {
+    margin: 0 auto 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .section, .hero-section {
+    padding: 3rem 8rem;
+  }
+
+  .footer {
+    padding: 2rem 8rem;
+  }
+
+  .navbar {
+    padding: 2rem 8rem;
+  }
+}
+@media (min-width: 992px) {
+  .section, .hero-section {
+    padding: 3rem 10rem;
+  }
+
+  .footer {
+    padding: 2rem 10rem;
+  }
+
+  .navbar {
+    padding: 2rem 10rem;
+  }
+}
+@media (min-width: 1200px) {
+  .section, .hero-section {
+    padding: 4rem 14rem;
+  }
+
+  .footer {
+    padding: 2rem 14rem;
+  }
+
+  .navbar {
+    padding: 2rem 14rem;
+  }
+}
 .hamburger {
   position: absolute;
   right: 10px;
@@ -571,34 +663,16 @@ button {
   z-index: 2;
 }
 
-.social-links {
-  position: fixed;
-  right: 2rem;
-  bottom: 4rem;
-}
-.social-links i {
-  font-size: 22px;
-  margin: 6px;
-  float: right;
-  clear: right;
-}
-
-.project {
-  margin-bottom: 4rem;
+.hero-technologies > ul {
+  animation-delay: 0.2s;
 }
 
 .cucuit .project-image {
   background: #f49c87;
 }
-.cucuit a:hover {
-  color: #ec4e29;
-}
 
 .shuttle-finder .project-image {
   background: #add65c;
-}
-.shuttle-finder a:hover {
-  color: #7aa329;
 }
 
 .about-section .about-text-col {
@@ -615,27 +689,6 @@ button {
 .about-section .about-image-col .about-image img {
   border-radius: 20px;
   width: 100%;
-}
-
-.contact-section {
-  text-align: center;
-}
-.contact-section .mail-link {
-  font-size: 30px;
-  font-weight: 600;
-}
-
-.footer {
-  background: #ececec;
-  color: #707070;
-}
-.footer i {
-  color: #707070;
-  font-size: 30px;
-}
-.footer p {
-  font-weight: 300;
-  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

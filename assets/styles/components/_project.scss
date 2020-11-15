@@ -19,7 +19,6 @@
 
 .project-info {
   max-width: 25rem;
-  float: right;
 
   h3 {
     color: $dark;
@@ -30,13 +29,16 @@
 
   .project-links {
     margin-bottom: 1rem;
+
+    a {
+      margin-right: 5px;
+    }
   }
 
   .project-description {
     color: white;
     background: $grey-1;
     border-radius: $box-radius;
-
     padding: 1.8rem;
 
     p {
@@ -47,7 +49,7 @@
     .project-stack {
       h4 {
         margin-bottom: 6px;
-        color: $secondary-text-dark;
+        color: $primary-text-dark;
       }
 
       p {
@@ -59,20 +61,36 @@
   }
 }
 
-.project-right {
+@media (max-width: 991.98px) {
   .project-info {
-    float: left;
+    margin-bottom: 1rem;
+    max-width: unset;
+    width: 100%;
+  }
+}
 
-    h3 {
-      text-align: left;
+@media (min-width: 992px) {
+  .project-right {
+    .project-info {
+      float: left;
+      h3 {
+        text-align: left;
+      }
+    }
+  }
+
+  .project-left {
+    .project-info {
+      float: right;
+      h3, .project-links {
+        text-align: right;
+      }
     }
   }
 }
 
-.project-left {
-  .project-info {
-    h3, .project-links {
-      text-align: right;
-    }
+@media (max-width: 1199.98px) {
+  .project-image, .project-description {
+    padding: 1rem;
   }
 }

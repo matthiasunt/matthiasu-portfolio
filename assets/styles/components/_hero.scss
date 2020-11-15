@@ -2,7 +2,6 @@
 @import "../shapes";
 
 .hero-row {
-  // position: fixed;
   width: 100%;
 
   p {
@@ -18,12 +17,10 @@
   }
 }
 
-.hero-section {
-  min-height: 95vh;
-}
 
 .hero-text {
   min-width: 16rem;
+  padding-right: 2rem;
 
   h1 {
     font-size: 52px;
@@ -67,33 +64,13 @@
 }
 
 .avatar-wrapper {
-  float: right;
   width: 14rem;
-  //display: block;
-  //position: absolute;
+  margin-left: 3rem;
 
-  div.avatar {
-    // border-radius: 72% 28% 64% 36%/75% 63% 37% 25%;
+  .avatar {
     border-radius: 100%;
-    // @extend .morph;
-    // border: 1px solid $primary;
     display: inline-block;
     overflow: hidden;
-
-    // opacity($primary, 50%);
-    //span.avatar-line {
-    //  width: 100%;
-    //  height: 100%;
-    //  position: absolute;
-    //  top: -1.25rem;
-    //  right: -1.25rem;
-    //  bottom: -1.25rem;
-    //  left: -1.25rem;
-    //  border: 1px solid $primary;
-    //  border-radius: 72% 28% 64% 36%/75% 63% 37% 25%;
-    //  -webkit-animation: morph 5s ease-in-out infinite;
-    //  animation: morph 5s ease-in-out infinite;
-    //}
 
     img {
       object-fit: cover;

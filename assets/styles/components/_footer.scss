@@ -1,0 +1,17 @@
+@import "../colors";
+
+.footer {
+  background: $grey-1;
+  color: $secondary-text-dark;
+  margin-top: 4rem;
+
+  i {
+    color: $secondary-text-dark;
+    font-size: 30px;
+  }
+
+  p {
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+}

@@ -1,16 +1,69 @@
 @import "colors.scss";
 
+// Basic resets
+html, body, div {
+  box-sizing: border-box;
+}
 
 body {
-  // @include fluid-type($min_width, $max_width, $min_font, $max_font);
   margin: 0;
 }
 
+.navbar {
+  //padding: 10px $padding-x;
+}
 
+.container {
+  width: unset;
+}
+
+
+.alternate-background {
+  background: $grey-3;
+}
+
+
+// Fix for project descriptions
+.col-md-6 {
+  width: 100%;
+}
+
+.project {
+  margin-bottom: 6rem;
+}
+
+
+// Media queries for responsiveness
 @media (max-width: 575.98px) {
+  .hero-technologies {
+    margin-top: 2rem;
+
+    ul {
+      line-height: 40px;
+
+      li {
+        margin-right: 3px;
+      }
+    }
+  }
+  .hero-text {
+    h1 {
+      font-size: 36px;;
+    }
+  }
+
+  .social-links {
+    right: 0.4rem;
+  }
+
   .section, .hero-section, .navbar, .footer {
     padding: 2rem 2rem;
   }
+
+  .section-text {
+    text-align: left;
+  }
+
   .footer {
     padding: 2rem 1rem;
   }
@@ -23,22 +76,32 @@ body {
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .section, .hero-section {
-    padding: 4rem 2rem;
+    padding: 3rem 6rem;
   }
 
   .footer {
-    padding: 2rem 2rem;
+    padding: 2rem 6rem;
   }
 
   .navbar {
-    padding: 2rem 2rem;
+    padding: 2rem 6rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-name {
+    text-align: center;
+  }
+
+  .avatar-wrapper {
+    margin: 0 auto 2rem;
   }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .section, .hero-section {
-    padding: 4rem 8rem;
+    padding: 3rem 8rem;
   }
 
   .footer {
@@ -53,7 +116,7 @@ body {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .section, .hero-section {
-    padding: 6rem 10rem;
+    padding: 3rem 10rem;
   }
 
   .footer {
@@ -68,43 +131,13 @@ body {
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .section, .hero-section {
-    padding: 6rem 12rem;
+    padding: 4rem 14rem;
   }
   .footer {
-    padding: 2rem 12rem;
+    padding: 2rem 14rem;
   }
 
   .navbar {
-    padding: 2rem 12rem;
+    padding: 2rem 14rem;
   }
-}
-
-html, body, div {
-  box-sizing: border-box;
-}
-
-.navbar {
-  //padding: 10px $padding-x;
-}
-
-.container {
-  width: unset;
-}
-
-.section, .hero-section {
-  //padding: 5rem $padding-x;
-}
-
-.section {
-  h2 {
-    // margin-bottom: 6rem;
-  }
-}
-
-.alternate-background {
-  background: $grey-3;
-}
-
-.footer {
-  //padding: 2rem $padding-x;
 }

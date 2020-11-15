@@ -10,46 +10,22 @@ $secondary-animations-delay: 0s;
   z-index: 2;
 }
 
-
-.social-links {
-  position: fixed;
-  right: 2rem;
-  bottom: 4rem;
-
-  i {
-    font-size: 22px;
-    margin: 6px;
-    float: right;
-    clear: right;
-  }
-
-  //-webkit-mask-image: -webkit-gradient(linear, left top,
-  //        left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-
+.hero-technologies > ul {
+  @extend .flicker-in;
+  animation-delay: 0.2s;
 }
 
-.project {
-  margin-bottom: 4rem;
-}
 
+// Define project colors
 .cucuit {
   .project-image {
     background: lighten(#F07558, 10%);
-  }
-
-
-  a:hover {
-    color: darken(#F07558, 10%);
   }
 }
 
 .shuttle-finder {
   .project-image {
     background: lighten(#99CC33, 10%);
-  }
-
-  a:hover {
-    color: darken(#99CC33, 10%);
   }
 }
 
@@ -84,28 +60,6 @@ $secondary-animations-delay: 0s;
   }
 }
 
-.contact-section {
-  text-align: center;
 
-  .mail-link {
-    font-size: 30px;
-    font-weight: 600;
-  }
-}
-
-.footer {
-  background: $grey-3;
-  color: $tertiary-text-light;
-
-  i {
-    color: $tertiary-text-light;
-    font-size: 30px;
-  }
-
-  p {
-    font-weight: 300;
-    margin-bottom: 0;
-  }
-}
 
 

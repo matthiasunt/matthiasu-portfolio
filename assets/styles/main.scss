@@ -2,13 +2,16 @@
 
 @import 'colors';
 @import "typography";
-@import "layout";
 
 @import "components/navbar";
 @import "components/hero";
+@import "components/social-links";
 @import "components/buttons";
 @import "components/side-menu";
 @import "components/project";
+@import "components/contact";
+@import "components/footer";
+
 
 @import "mixins/fluid-type";
 
@@ -18,3 +21,5 @@
 @import 'animations/text-pop-up-top';
 @import 'animations/text-shadow-drop-center';
 
+
+@import "layout";
