@@ -1,12 +1,29 @@
-.social-links {
-  position: fixed;
-  right: 2rem;
-  bottom: 4rem;
+@media (min-width: 768px) {
+  .social-links {
+    position: fixed;
+    right: 2rem;
+    bottom: 4rem;
 
-  i {
-    font-size: 22px;
-    margin: 6px;
-    float: right;
-    clear: right;
+    i {
+      font-size: 22px;
+      margin: 6px;
+      float: right;
+      clear: right;
+    }
+
+    transition: opacity 0.25s;
+  }
+  // To fade out before entering the footer, !important to overwrite animation
+  .hide {
+    opacity: 0 !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .social-links {
+    white-space: nowrap;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 2rem;
   }
 }

@@ -8,9 +8,9 @@
 .project-image {
   //position: absolute;
   // width: 50%;
-  padding: 2rem;
-  border-radius: $box-radius;
-  background: $grey-2;
+  // padding: 2rem;
+  // border-radius: $box-radius;
+  // background: $grey-2;
 
   img {
     width: 100%;
@@ -19,7 +19,8 @@
 
 .project-info {
   max-width: 25rem;
-
+  border-left: 4px $grey-2 solid;
+  padding-left: 14px;
   h3 {
     color: $dark;
     font-size: 28px;
@@ -36,10 +37,10 @@
   }
 
   .project-description {
-    color: white;
-    background: $grey-1;
-    border-radius: $box-radius;
-    padding: 1.8rem;
+    // color: white;
+    // background: $grey-1;
+    // border-radius: $box-radius;
+    // padding: 1.8rem;
 
     p {
       margin-top: 0;
@@ -49,11 +50,13 @@
     .project-stack {
       h4 {
         margin-bottom: 6px;
-        color: $primary-text-dark;
+        // color: $primary-text-dark;
+        color: $primary-text-light;
       }
 
       p {
-        color: $secondary-text-dark;
+        // color: $secondary-text-dark;
+        color: $secondary-text-light;
         margin-bottom: 0;
         line-height: 24px;
       }
@@ -69,28 +72,9 @@
   }
 }
 
-@media (min-width: 992px) {
-  .project-right {
-    .project-info {
-      float: left;
-      h3 {
-        text-align: left;
-      }
-    }
-  }
-
-  .project-left {
-    .project-info {
-      float: right;
-      h3, .project-links {
-        text-align: right;
-      }
-    }
-  }
-}
 
 @media (max-width: 1199.98px) {
   .project-image, .project-description {
-    padding: 1rem;
+    // padding: 1rem;
   }
 }

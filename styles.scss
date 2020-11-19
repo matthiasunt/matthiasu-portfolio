@@ -15,23 +15,82 @@ html {
 }
 
 
+
 // Define project colors
+.sheep83 {
+  .project-image {
+    // background: lighten(#489289, 10%);
+  }
+
+  .project-info {
+    border-color: #489289;
+  }
+}
+
 .cucuit {
   .project-image {
-    background: lighten(#F07558, 10%);
+    // background: lighten(#F07558, 10%);
+  }
+
+  .project-info {
+    border-color: #F07558;
   }
 }
 
 .shuttle-finder {
   .project-image {
-    background: lighten(#99CC33, 10%);
+    // background: lighten(#99CC33, 10%);
+  }
+
+  .project-info {
+    border-color: #99CC33;
   }
 }
 
-// Animations
-.hero-technologies > ul {
-  @extend .flicker-in;
-  animation-delay: 0.2s;
+
+@media (min-width: 768px) {
+  .hero-name > h1 {
+    @include fade-in-left;
+    // @extend .text-pop-up-top;
+    animation-delay: 0.3s;
+  }
+
+  .hero-text > p {
+    @include fade-in-left;
+    animation-delay: 0.3s;
+  }
+
+  .avatar-wrapper {
+    @include fade-in-right;
+    animation-delay: 0.3s;
+  }
+
+  // Animations
+  .hero-technologies {
+    @include fade-in-left;
+    animation-delay: 0.6s;
+  }
+
+  .social-links {
+    @include fade-in;
+    animation-delay: 0.9s;
+  }
+
+  .projects-section {
+    .section-title {
+      @include fade-in-bottom;
+      animation-delay: 0.9s;
+    }
+  }
+
+  //.project {
+  //  visibility: hidden;
+  //  will-change: opacity, visibility;
+  //}
+  //
+  //.project.is-visible {
+  //  visibility: visible;
+  //}
 }
 
 

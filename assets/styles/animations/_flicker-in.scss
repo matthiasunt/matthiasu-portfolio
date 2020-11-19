@@ -1,4 +1,4 @@
-.flicker-in {
+@mixin flicker-in {
   -webkit-animation: flicker-in 1s linear both;
   animation: flicker-in 1s linear both;
 }

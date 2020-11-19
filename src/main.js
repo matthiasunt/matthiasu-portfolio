@@ -9,6 +9,17 @@ window.onscroll = () => {
     const body = document.body,
         html = document.documentElement;
 
+
+    const scrollOffset = window.pageYOffset + window.innerHeight;
+
+    const socialLinks = document.getElementById('social-links');
+    if (document.documentElement.scrollHeight - scrollOffset < 80) {
+        socialLinks.classList.add('hide');
+    } else {
+        socialLinks.classList.remove('hide');
+    }
+
+
     // console.log(window.outerHeight, window.pageYOffset)
     // const height = Math.max(body.scrollHeight, body.offsetHeight,
     //     html.clientHeight, html.scrollHeight, html.offsetHeight);

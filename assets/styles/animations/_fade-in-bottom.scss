@@ -1,6 +1,6 @@
-.fade-in-bottom {
-  -webkit-animation: fade-in-bottom .8s cubic-bezier(.39, .575, .565, 1.000) both;
-  animation: fade-in-bottom .8s cubic-bezier(.39, .575, .565, 1.000) both
+@mixin fade-in-bottom {
+  -webkit-animation: fade-in-bottom .5s cubic-bezier(.39, .575, .565, 1.000) both;
+  animation: fade-in-bottom .5s cubic-bezier(.39, .575, .565, 1.000) both
 }
 
 /* ----------------------------------------------
