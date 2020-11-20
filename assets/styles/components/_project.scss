@@ -21,6 +21,7 @@
   max-width: 25rem;
   border-left: 4px $grey-2 solid;
   padding-left: 14px;
+
   h3 {
     color: $dark;
     font-size: 28px;
@@ -69,6 +70,10 @@
     margin-bottom: 1rem;
     max-width: unset;
     width: 100%;
+  }
+
+  .project {
+    margin-bottom: 3rem;
   }
 }
 

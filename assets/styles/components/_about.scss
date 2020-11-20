@@ -1,4 +1,5 @@
 @import "../colors";
+@import "../shapes";
 
 .about-section {
   .about-text-col {
@@ -12,13 +13,19 @@
   }
 
   .about-image-col {
-    padding-left: 2rem;
-
     .about-image {
+      text-align: center;
+
       img {
         border-radius: $box-radius;
-        width: 100%;
+        max-width: 65%;
       }
     }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about-image-col {
+    padding-top: 2rem;
   }
 }

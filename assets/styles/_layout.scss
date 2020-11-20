@@ -28,10 +28,6 @@ body {
   width: 100%;
 }
 
-.project {
-  margin-bottom: 6rem;
-}
-
 
 // Media queries for responsiveness
 @media (max-width: 575.98px) {
@@ -107,12 +103,16 @@ body {
   .navbar {
     padding: 2rem 8rem;
   }
+
+  .project {
+    margin-bottom: 4rem;
+  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .section, .hero-section {
-    padding: 3rem 10rem;
+    padding: 4rem 10rem;
   }
 
   .footer {

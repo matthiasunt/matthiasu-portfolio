@@ -65,22 +65,21 @@ html {
     animation-delay: 0.3s;
   }
 
-  // Animations
   .hero-technologies {
     @include fade-in-left;
     animation-delay: 0.6s;
   }
 
-  .social-links {
-    @include fade-in;
-    animation-delay: 0.9s;
-  }
-
   .projects-section {
     .section-title {
       @include fade-in-bottom;
-      animation-delay: 0.9s;
+      animation-delay: 0.6s;
     }
+  }
+
+  .social-links {
+    @include fade-in;
+    animation-delay: 0.9s;
   }
 
   //.project {
