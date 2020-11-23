@@ -31,23 +31,6 @@ body {
 
 // Media queries for responsiveness
 @media (max-width: 575.98px) {
-  .hero-technologies {
-    margin-top: 2rem;
-
-    ul {
-      line-height: 40px;
-
-      li {
-        margin-right: 3px;
-      }
-    }
-  }
-  .hero-text {
-    h1 {
-      font-size: 36px;;
-    }
-  }
-
   .section, .hero-section, .navbar, .footer {
     padding: 2rem 2rem;
   }

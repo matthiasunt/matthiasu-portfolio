@@ -45,6 +45,7 @@
     li {
       font-weight: 500;
       border-radius: 8px;
+      line-height: 40px;
       display: inline;
       padding: 5px;
       background: white;
@@ -80,6 +81,23 @@
       display: block;
       height: 100%;
       width: 100%;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-technologies {
+    margin-top: 2rem;
+
+    ul {
+      li {
+        margin-right: 3px;
+      }
+    }
+  }
+  .hero-text {
+    h1 {
+      font-size: 36px;;
     }
   }
 }

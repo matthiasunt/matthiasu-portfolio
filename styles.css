@@ -135,6 +135,7 @@ h2.section-title {
 .hero-technologies ul li {
   font-weight: 500;
   border-radius: 8px;
+  line-height: 40px;
   display: inline;
   padding: 5px;
   background: white;
@@ -168,6 +169,18 @@ h2.section-title {
   width: 100%;
 }
 
+@media (max-width: 767.98px) {
+  .hero-technologies {
+    margin-top: 2rem;
+  }
+  .hero-technologies ul li {
+    margin-right: 3px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+}
 @media (min-width: 768px) {
   .hero-text {
     padding-right: 2rem;
@@ -596,20 +609,6 @@ body {
 }
 
 @media (max-width: 575.98px) {
-  .hero-technologies {
-    margin-top: 2rem;
-  }
-  .hero-technologies ul {
-    line-height: 40px;
-  }
-  .hero-technologies ul li {
-    margin-right: 3px;
-  }
-
-  .hero-text h1 {
-    font-size: 36px;
-  }
-
   .section, .hero-section, .navbar, .footer {
     padding: 2rem 2rem;
   }
