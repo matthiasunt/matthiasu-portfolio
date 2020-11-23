@@ -3,7 +3,3 @@
 
 This is my personal developer portfolio.
 
-## Forking this repo
-
-## Color Theme
-
