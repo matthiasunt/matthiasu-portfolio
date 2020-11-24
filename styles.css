@@ -79,27 +79,6 @@ h2.section-title {
   text-align: center;
 }
 
-.navbar {
-  transition: top 0.3s;
-  width: 100%;
-  z-index: 1;
-  font-size: 18px;
-  position: fixed;
-  background: white;
-  box-shadow: 0 2px 4px -1px #e0e0e1;
-}
-.navbar .navbar-logo a {
-  color: #0000B8;
-}
-.navbar .navbar-links {
-  white-space: nowrap;
-  text-align: right;
-}
-.navbar .navbar-links a {
-  color: #3A3A3C;
-  margin: 0 20px;
-}
-
 .hero-row {
   width: 100%;
 }
