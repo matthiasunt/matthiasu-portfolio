@@ -576,6 +576,7 @@ body {
 
 .container {
   width: unset;
+  max-width: 1264px;
 }
 
 .alternate-background {
