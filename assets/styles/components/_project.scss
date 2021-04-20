@@ -1,17 +1,8 @@
 @import "../shapes";
 @import "../colors";
 
-.project {
-  //position: relative;
-}
 
 .project-image {
-  //position: absolute;
-  // width: 50%;
-  // padding: 2rem;
-  // border-radius: $box-radius;
-  // background: $grey-2;
-
   img {
     width: 100%;
   }
@@ -38,25 +29,24 @@
   }
 
   .project-description {
-    // color: white;
-    // background: $grey-1;
-    // border-radius: $box-radius;
-    // padding: 1.8rem;
-
     p {
       margin-top: 0;
       font-size: 16px;
+
+      a {
+        color: #000;
+        text-decoration: underline;
+      }
     }
 
     .project-stack {
       h4 {
         margin-bottom: 6px;
-        // color: $primary-text-dark;
         color: $primary-text-light;
       }
 
+
       p {
-        // color: $secondary-text-dark;
         color: $secondary-text-light;
         margin-bottom: 0;
         line-height: 24px;
@@ -74,12 +64,5 @@
 
   .project {
     margin-bottom: 3rem;
-  }
-}
-
-
-@media (max-width: 1199.98px) {
-  .project-image, .project-description {
-    // padding: 1rem;
   }
 }
